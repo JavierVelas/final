@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini PWA de Notas</title>
+
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
+</head>
+<body>
+  <app-root></app-root> <!-- Debe estar antes de los scripts -->
+
+  <h1>Mis Notas</h1>
+  <textarea id="note-input" placeholder="Escribe tu nota aquí..."></textarea>
+  <button id="save-note">Guardar Nota</button>
+  <button id="update-note" style="display: none;">Actualizar Nota</button>
+  <ul id="notes-list"></ul>
+
+  <script src="assets/script.js"></script> <!-- Mantén los scripts al final -->
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+</body>
+</html>
